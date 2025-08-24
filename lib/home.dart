@@ -113,7 +113,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
             ),
             onBreathePressed: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => BreathingScreen()),
+              MaterialPageRoute(builder: (context) => BreathingScreen(selectedSong: null)), // Pass selected song if needed
             ),
             onProfilePressed: () => Navigator.push(
               context,

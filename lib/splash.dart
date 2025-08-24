@@ -76,7 +76,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
               const SizedBox(height: 20),
               
               const Text(
-                'Blockchain Music Therapy',
+                'Blockchain Music Sessions',
                 style: TextStyle(
                   color: AppTheme.textSecondary,
                   fontSize: 16,

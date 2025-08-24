@@ -25,7 +25,7 @@ class _SongSelectionScreenState extends ConsumerState<SongSelectionScreen>
   final List<MusicNFT> allSongs = [
     MusicNFT(
       tokenId: BigInt.from(1),
-      uri: 'ipfs://QmWgQ',
+      uri: 'ipfs://0198dbf6-1689-714d-9ad7-d0981d0ae953',
       title: 'Calm Waters',
       artistName: 'Ambient Flow',
       coverImage: 'https://example.com/calm_waters.jpg',
@@ -36,7 +36,7 @@ class _SongSelectionScreenState extends ConsumerState<SongSelectionScreen>
     ),
     MusicNFT(
       tokenId: BigInt.from(2),
-      uri: 'ipfs://QmWgQ',
+      uri: 'ipfs://0198dbf5-f58c-7605-af72-b22971f977cd',
       title: 'Forest Whispers',
       artistName: 'Nature Sounds',
       coverImage: 'https://example.com/forest_whispers.jpg',
@@ -47,7 +47,7 @@ class _SongSelectionScreenState extends ConsumerState<SongSelectionScreen>
     ),
     MusicNFT(
       tokenId: BigInt.from(3),
-      uri: 'ipfs://QmWgQ',
+      uri: 'ipfs://0198dbf5-d362-7e47-b306-3e3c49c953b3',
       title: 'Deep Sleep',
       artistName: 'Dream Weaver',
       coverImage: 'https://example.com/deep_sleep.jpg',
@@ -58,7 +58,7 @@ class _SongSelectionScreenState extends ConsumerState<SongSelectionScreen>
     ),
     MusicNFT(
       tokenId: BigInt.from(4),
-      uri: 'ipfs://QmWgQ',
+      uri: 'ipfs://0198dbf5-aed1-78c8-ba59-53473550be3e',
       title: 'Morning Energy',
       artistName: 'Uplift Beats',
       coverImage: 'https://example.com/morning_energy.jpg',
@@ -69,7 +69,7 @@ class _SongSelectionScreenState extends ConsumerState<SongSelectionScreen>
     ),
     MusicNFT(
       tokenId: BigInt.from(5),
-      uri: 'ipfs://QmWgQ',
+      uri: 'ipfs://0198dbf5-8b7f-7aa0-92b9-7ffb6d1efb01',
       title: 'Focus Zone',
       artistName: 'Productivity Sounds',
       coverImage: 'https://example.com/focus_zone.jpg',
@@ -78,6 +78,40 @@ class _SongSelectionScreenState extends ConsumerState<SongSelectionScreen>
       price: BigInt.zero,
       streamCount: BigInt.from(18765),
     ),
+    MusicNFT(
+      tokenId: BigInt.from(6),
+      uri: 'ipfs://0198dbf4-f7ad-7e02-a640-fb11173ad418',
+      title: 'Happy Vibes',
+      artistName: 'Joyful Tunes',
+      coverImage: 'https://example.com/happy_vibes.jpg',
+      moodCategories: [2, 6], // Happy, Uplifting
+      artist: EthereumAddress.fromHex('0x0000000000000000000000000000000000000006'),
+      price: BigInt.zero,
+      streamCount: BigInt.from(21034),
+    ),
+    MusicNFT(
+      tokenId: BigInt.from(7),
+      uri: 'ipfs://0198dbf3-a9e4-75fa-95b7-15b4b209ce7f',
+      title: 'Romantic Evening',
+      artistName: 'Love Songs',
+      coverImage: 'https://example.com/romantic_evening.jpg',
+      moodCategories: [5, 2], // Romantic, Happy
+      artist: EthereumAddress.fromHex('0x0000000000000000000000000000000000000007'),
+      price: BigInt.zero,
+      streamCount: BigInt.from(15432),
+    ),
+    MusicNFT(
+      tokenId: BigInt.from(8),
+      uri: 'ipfs://0198dbf3-8025-7d5f-a1ea-cd9d5c72e16f',
+      title: 'Energetic Pulse',
+      artistName: 'Dynamic Beats',
+      coverImage: 'https://example.com/energetic_pulse.jpg',
+      moodCategories: [1, 4], // Energetic, Focused
+      artist: EthereumAddress.fromHex('0x0000000000000000000000000000000000000008'),
+      price: BigInt.zero,
+      streamCount: BigInt.from(19876),
+    ),
+
   ];
 
   List<MusicNFT> filteredSongs = [];
@@ -380,3 +414,4 @@ extension on MusicNFT {
     }
   }
 }
+
