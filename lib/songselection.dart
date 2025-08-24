@@ -9,7 +9,6 @@ import 'package:vibraniomx/musicnft.dart';
 import 'package:vibraniomx/theme.dart';
 import 'package:vibraniomx/yinyang.dart';
 import 'package:web3dart/web3dart.dart';
-import 'dart:math' as math;
 class SongSelectionScreen extends ConsumerStatefulWidget {
   const SongSelectionScreen({super.key});
 
@@ -190,11 +189,12 @@ class _SongSelectionScreenState extends ConsumerState<SongSelectionScreen>
             ),
           ],
         ),
-        child: YinYangWidget(
-          size: 150,
-          interactive: true,
-          onTap: (isYin) => _filterSongs(isYin ? 'yin' : 'yang'),
-        ),
+        child: YinYangButton()
+        // YinYangWidget(
+        //   size: 150,
+        //   interactive: true,
+        //   onTap: (isYin) => _filterSongs(isYin ? 'yin' : 'yang'),
+        // ),
       ),
     );
   }

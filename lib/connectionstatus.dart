@@ -22,7 +22,7 @@ class ConnectionStatus extends ConsumerWidget {
         } else {
           await blockchainService.disconnect();
           ref.invalidate(blockchainServiceProvider);
-                      };
+                      }
       },
               // Invalidate providers that depend on connection status
       child: Container(

@@ -3,7 +3,6 @@
 // ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:vibraniomx/chainservice.dart';
 import 'package:vibraniomx/home.dart';
 import 'package:vibraniomx/loading.dart';
@@ -150,12 +149,13 @@ class _RegistrationScreenState extends ConsumerState<RegistrationScreen>
             ),
           ],
         ),
-        child: YinYangWidget(
-          size: 200,
-          interactive: true,
-          onTap: _handleYinYangTap,
-          // selectedSide: _selectedType == 'listener' ? 'yin' : _selectedType == 'artist' ? 'yang' : '',
-        ),
+        child: YinYangButton()
+        // YinYangWidget(
+        //   size: 200,
+        //   interactive: true,
+        //   onTap: _handleYinYangTap,
+        //   // selectedSide: _selectedType == 'listener' ? 'yin' : _selectedType == 'artist' ? 'yang' : '',
+        // ),
       ),
     );
   }
@@ -235,20 +235,20 @@ class _RegistrationScreenState extends ConsumerState<RegistrationScreen>
             gradient: _selectedType == 'listener' ? AppTheme.yinGradient : AppTheme.yangGradient,
           ),
         const SizedBox(height: 16),
-        OutlinedButton(
-          onPressed: () => Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => HomeScreen()),
-          ),
-          style: OutlinedButton.styleFrom(
-            side: const BorderSide(color: AppTheme.primary),
-            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-          ),
-          child: const Text(
-            'Skip Registration',
-            style: TextStyle(color: AppTheme.primary),
-          ),
-        ),
+        // OutlinedButton(
+        //   onPressed: () => Navigator.of(context).pushReplacement(
+        //     MaterialPageRoute(builder: (context) => HomeScreen()),
+        //   ),
+        //   style: OutlinedButton.styleFrom(
+        //     side: const BorderSide(color: AppTheme.primary),
+        //     padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+        //     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+        //   ),
+        //   child: const Text(
+        //     'Skip Registration',
+        //     style: TextStyle(color: AppTheme.primary),
+        //   ),
+        // ),
       ],
     );
   }

@@ -4,7 +4,6 @@
 // ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:vibraniomx/breathing.dart';
 import 'package:vibraniomx/connectionstatus.dart';
 import 'package:vibraniomx/controlbar.dart';
@@ -231,7 +230,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                     ),
                   ],
                 ),
-                child: YinYangWidget(size: 250),
+                child: YinYangButton(),
               ),
             );
           },

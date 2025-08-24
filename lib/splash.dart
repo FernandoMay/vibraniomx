@@ -31,7 +31,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
   Future<void> _initializeApp() async {
     try {
       await BlockchainService().initialize();
-      await Future.delayed(const Duration(seconds: 3));
+      // await Future.delayed(const Duration(seconds: 3));
       
       if (mounted) {
         Navigator.of(context).pushReplacement(
@@ -52,7 +52,8 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              YinYangWidget(size: 150)
+              // YinYangWidget(size: 150)
+              YinYangButton()
                 .animate(onPlay: (controller) => controller.repeat())
                 .rotate(duration: 4000.ms),
               

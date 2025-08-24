@@ -3,8 +3,6 @@
 // ```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'dart:math' as math;
 
 import 'package:vibraniomx/musicnft.dart';
 import 'package:vibraniomx/theme.dart';
@@ -161,7 +159,7 @@ class _BreathingScreenState extends ConsumerState<BreathingScreen>
             ),
             const Expanded(
               child: Text(
-                'Breathing Therapy',
+                'Breathing Session',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,

@@ -7,7 +7,6 @@ import 'package:vibraniomx/profile.dart';
 import 'package:web3dart/web3dart.dart';
 import 'package:http/http.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:para/para.dart';
 // import '../models/user_profile.dart';
 // import '../models/music_nft.dart';
 
@@ -29,9 +28,9 @@ class BlockchainService {
   EthereumAddress? get userAddress => _userAddress;
 
   Future<void> initialize() async {
-    final rpcUrl = dotenv.env['https://rpc.monad.testnet']!;
-    final contractAddr = dotenv.env['0x2e6a0E553c62a52446e00b1FCab214b489B77051']!;
-    final toursAddr = dotenv.env['0xFF38c9A0e766Ef4b85A00DD1400e942B49647113']!;
+    final rpcUrl = dotenv.env['MONAD_RPC_URL']!;
+    final contractAddr = dotenv.env['VIBRANIOM_CONTRACT_ADDRESS']!;
+    final toursAddr = dotenv.env['TOURS_TOKEN_ADDRESS']!;
 
     _client = Web3Client(rpcUrl, Client());
     _contractAddress = EthereumAddress.fromHex(contractAddr);
