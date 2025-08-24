@@ -86,6 +86,8 @@ class _RegistrationScreenState extends ConsumerState<RegistrationScreen>
 
   Widget _buildHeader() {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Row(
           children: [
