@@ -240,14 +240,14 @@ class _SongSelectionScreenState extends ConsumerState<SongSelectionScreen>
                 decoration: BoxDecoration(
                   color: song.primaryMoodColor.withOpacity(0.3),
                   borderRadius: BorderRadius.circular(12),
-                  image: song.coverImage != null && song.coverImage!.isNotEmpty
+                  image: song.coverImage.isNotEmpty
                       ? DecorationImage(
-                          image: NetworkImage(song.coverImage!),
+                          image: NetworkImage(song.coverImage),
                           fit: BoxFit.cover,
                         )
                       : null,
                 ),
-                child: song.coverImage == null || song.coverImage!.isEmpty
+                child: song.coverImage.isEmpty
                     ? Icon(Icons.music_note, color: song.primaryMoodColor)
                     : null,
               ),
